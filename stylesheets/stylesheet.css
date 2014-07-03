@@ -429,9 +429,10 @@ th {
 
 body {
   font-size: 15px;
-  font-family: Arial, Arial, Helvetica, sans-serif;
+  font-family: "Lora", Times, serif;
   line-height: 1.5;
-  background: #D1D1D1;
+  /* background: #D1D1D1; */
+  background: #ddd url(../images/gingham.jpg);
 }
 
 a {
@@ -467,7 +468,6 @@ h1.title {
   border-radius: 20px 20px 0 0;
   -moz-border-radius: 20px 20px 0 0;
   -webkit-border-radius: 20px 20px 0 0;
-  text-align: center;
 }
 
 .logo {
@@ -480,9 +480,18 @@ p.tagline {
   font-size: 17px;
 }
 
+h2.tagline {
+  color: #fff;
+  text-align: center;
+  font-family: "Dosis", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: normal;
+}
+
 #main {
   margin-top: 20px;
-  padding: 0 20px 90px;
+  padding: 0 20px 40px;
   background-color: #fff;
   text-align: left;
 }
