@@ -508,6 +508,10 @@ h2.tagline {
   overflow: hidden;
 }
 
+.download-bar .inner a {
+  padding: 0 10px;
+}
+
 .download-bar .watch-fork iframe {
   display: block;
   float: left;
