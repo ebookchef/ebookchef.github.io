@@ -8,9 +8,7 @@ $('document').ready(function() {
     
     $('.year').text(currentYear);
     
-	$('ul.nav li a').on('click', function(e) {
-		e.preventDefault();
-
+	/*$('ul.nav li a').on('click', function(e) {
 		var index = $('ul.nav li a').index(this),
 			diffHeader = 50, //$('.navbar-header').height(),
 			topTarget = $(".content-block:eq("+index+")").offset().top - diffHeader;
@@ -21,10 +19,8 @@ $('document').ready(function() {
 	});
 
 	$('.navbar-brand').on('click', function(e) {
-		e.preventDefault();
-
 		$('html, body').animate({
             scrollTop: 0
         }, 500);
-	});
+	});*/
 });
