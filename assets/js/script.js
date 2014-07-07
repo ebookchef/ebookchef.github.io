@@ -10,4 +10,12 @@ $('document').ready(function() {
             scrollTop: topTarget
         }, 500);
 	});
+
+	$('.navbar-brand').on('click', function(e) {
+		e.preventDefault();
+
+		$('html, body').animate({
+            scrollTop: 0
+        }, 500);
+	});
 });
