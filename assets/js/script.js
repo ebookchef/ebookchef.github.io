@@ -1,4 +1,13 @@
 $('document').ready(function() {
+	var now = new Date(),
+    	currentYear = now.getYear();
+    
+    if (currentYear < 1900) {
+    	currentYear = currentYear+1900
+    }
+    
+    $('.year').text(currentYear);
+    
 	$('ul.nav li a').on('click', function(e) {
 		e.preventDefault();
 
