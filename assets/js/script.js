@@ -12,7 +12,7 @@ $('document').ready(function() {
 		e.preventDefault();
 
 		var index = $('ul.nav li a').index(this),
-			diffHeader = 50,
+			diffHeader = 50, //$('.navbar-header').height(),
 			topTarget = $(".content-block:eq("+index+")").offset().top - diffHeader;
 
 		$('html, body').animate({

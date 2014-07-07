@@ -26,7 +26,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#menu" data-offset="60">
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
@@ -39,12 +39,12 @@
           </button>
           <a class="navbar-brand" href="#"><b>EBOOK CHEF</b></a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div id="menu" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Conteúdo do Curso</a></li>
-            <li><a href="#">Professor</a></li>
-            <li><a href="#">Inscrição</a></li>
+            <li><a href="#headerwrap">Início</a></li>
+            <li><a href="#curso">Conteúdo do Curso</a></li>
+            <li><a href="#professor">Professor</a></li>
+            <li><a href="#inscricao">Inscrição</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -65,7 +65,7 @@
 	</div><!-- /headerwrap -->
 	
 	
-	<div class="container content-block">
+	<div id="curso" class="container content-block">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
 				<h1>Your Landing Page<br/>Looks Wonderful Now.</h1>
@@ -104,7 +104,7 @@
 	
   <hr>
 
-  <div class="container content-block">
+  <div id="professor" class="container content-block">
     <div class="row mt centered">
       <div class="col-lg-6 col-lg-offset-3">
         <h1>Conheça o professor.</h1>
@@ -128,7 +128,7 @@
 
 	<hr>
 	
-  <div class="container content-block">
+  <div id="inscricao" class="container content-block">
     <div class="col-lg-12">
       <div class="row mt centered">
         <h1>Comece por aqui seu  aprendizado.</h1>
