@@ -14,7 +14,6 @@ $('document').ready(function() {
 	});
 	
 	$('#formInscricao').on('submit', function(e) {
-		e.preventDefault();
 		ga('send', 'event', {
 			'eventCategory' : 'form',
 			'eventAction'   : 'submit',
