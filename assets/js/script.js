@@ -9,7 +9,8 @@ $('document').ready(function() {
     $('.year').text(currentYear);
     
 	$('body').on('activate.bs.scrollspy', function () {
-		//add trackEvent do analytics para os itens de menu
+		var navLabel = $('#menu ul li.active a').attr('href').replace('#', '');
+		ga('send', 'event', 'nav', 'enter', navLabel);
 	});
 	
 	/*$('ul.nav li a').on('click', function(e) {
