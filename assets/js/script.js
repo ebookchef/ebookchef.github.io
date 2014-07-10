@@ -20,7 +20,7 @@ $('document').ready(function() {
 			'eventLabel'    : 'inscricao',
 			'hitCallback'   : function () {
 				$('#formInscricao').off('submit');
-				$('#formInscricao')[0].submit();
+				$('button[name=submit]').trigger('click');
 			}
 		});
 		return false;
