@@ -108,12 +108,6 @@ a:after {
 	margin-bottom: 40px;
 }
 
-.form-control {
-	height: 42px;
-	font-size: 18px;
-	width: 280px;
-}
-
 img.rounded {
     border-radius: 90px;
     -moz-border-radius: 90px;
@@ -191,6 +185,17 @@ i {
   border-radius: 5px;
 }
 
+.plan form {
+  text-align: left;
+}
+
+.plan label {
+  font-family: Lato, sans-serif;
+  color: #999;
+  font-weight: normal;
+  font-size: 14px;
+}
+
 .plan-title {
   margin-bottom: 12px;
   font-size: 24px;
@@ -216,8 +221,7 @@ i {
 .plan-features {
   width: 90%;
   margin: 20px auto 15px;
-  padding: 15px 0 0 15px;
-  border-top: 1px solid #e5ded6;
+  padding: 0 0 0 15px;
   text-align: left;
 }
 
