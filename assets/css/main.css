@@ -262,3 +262,44 @@ i {
   margin-bottom: 2px;
   border-bottom: 0;
 }
+
+#curso .glyph-icon {
+  font-size: 64px;
+  width: 180px;
+  height: 180px;
+  line-height: 168px;
+  display: block;
+  margin: 0 auto;
+}
+
+#curso .push-10.glyph-icon:before,
+#curso .push-10.glyph-icon:after {
+  margin-left: 10px;
+}
+
+#conteudo-icon-1:before {
+  color: #7E6C27;
+}
+
+#conteudo-icon-2:before {
+  color: #4D1616;
+}
+
+#conteudo-icon-3:before {
+  color: #1A1E50;
+}
+
+#conteudo-icon-4:before {
+  color: #1E6456;
+}
+
+[class^="flaticon-"]:before, 
+[class*=" flaticon-"]:before, 
+[class^="flaticon-"]:after, 
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 90px;
+  font-style: normal;
+  color: #333;
+  margin-left: 0px;
+}
