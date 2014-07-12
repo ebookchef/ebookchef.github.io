@@ -153,19 +153,34 @@ i {
   #headerwrap {
     padding-top: 60px;
   }
+
+  #headerwrap p {
+    text-align: center;
+  }
+}
+
+.no-gutter {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.no-gutter-left {
+  padding-left: 0px;
+}
+.no-gutter-right {
+  padding-right: 0px;
 }
 
 #headerwrap h1 {
 	margin-top: 60px;
 	margin-bottom: 15px;
 	color: white;
-	font-size: 45px;
+	font-size: 2.4em;
 	font-weight: 300;
 	letter-spacing: 1px;
 }
 
 .plan {
-  width: 310px;
+  width: 100%;
   margin: 20px auto;
   padding: 15px 25px;
   text-align: center;
@@ -199,7 +214,7 @@ i {
 }
 
 .plan-features {
-  width: 230px;
+  width: 90%;
   margin: 20px auto 15px;
   padding: 15px 0 0 15px;
   border-top: 1px solid #e5ded6;
