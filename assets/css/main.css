@@ -143,6 +143,14 @@ i {
     background-size: cover;
 }
 
+#headerwrap a {
+  color: #8FCBF3;
+}
+
+#headerwrap a:hover {
+  text-decoration: underline;
+}
+
 #sucesso-inscricao #headerwrap {
   padding-top: 100px;
   min-height: 600px;
