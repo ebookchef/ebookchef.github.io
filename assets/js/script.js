@@ -1,3 +1,10 @@
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
 $('document').ready(function() {
 	var now = new Date(),
     	currentYear = now.getYear();
@@ -25,20 +32,4 @@ $('document').ready(function() {
 		});
 		return false;
 	});
-	
-	/*$('ul.nav li a').on('click', function(e) {
-		var index = $('ul.nav li a').index(this),
-			diffHeader = 50, //$('.navbar-header').height(),
-			topTarget = $(".content-block:eq("+index+")").offset().top - diffHeader;
-
-		$('html, body').animate({
-            scrollTop: topTarget
-        }, 500);
-	});
-
-	$('.navbar-brand').on('click', function(e) {
-		$('html, body').animate({
-            scrollTop: 0
-        }, 500);
-	});*/
 });

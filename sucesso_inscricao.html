@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="assets/img/favicon32.png" />
+
+    <title>Ebook Chef</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Fonts from Google Fonts -->
+	  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script type="text/javascript">
+    var idPagamento = getParameterByName('id_pagamento');
+    if(!idPagamento) {
+      window.location.href="/";
+    }
+
+    $(document).ready(function() {
+        $('#id-pagamento').html(idPagamento);
+    });
+    </script>
+  </head>
+
+  <body id="sucesso-inscricao">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="assets/img/logo.png" height="50" alt="Ebook Chef"/><!--b>EBOOK CHEF</b --></a>
+        </div>
+      </div>
+    </div>
+
+  	<div id="headerwrap" class="content-block">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-6">
+  					<h1 style="font-size: 1.5em;">
+              <strong style="font-size: 1.1em;">Bem Vindo(a) ao Curso Ebook Chef!</strong>
+              <br><br>Anote seu código de inscrição.
+              <br><br><em id="id-pagamento" style="font-size: 0.6em; background-color: #003A55; padding: 15px;"></em>
+              <br><br>Assim que seu pagamento for confirmado você receberá no e-mail informado no site do PagSeguro uma mensagem com todas as instruções do curso.
+              <br><br>Prepare-se para criar eBooks profissionais de forma simples e prática. Nos vemos em breve.
+              <br><br>Edson Carvalho
+            </h1>
+  				</div><!-- /col-lg-6 -->
+  				<div class="col-lg-6">
+  					<img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
+  				</div><!-- /col-lg-6 -->
+  				
+  			</div><!-- /row -->
+  		</div><!-- /container -->
+  	</div><!-- /headerwrap -->
+	
+	
+    <div class="container">
+      <br>
+      <p class="centered">Dúvidas? Escreva para 
+        <a href="mailto:contato@ebookchef.com.br">contato@ebookchef.com.br</a>.<br>
+        Ebook Chef &copy; <span class="year"></span></p>
+    </div><!-- /container -->
+
+  	<script>
+  	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  	  ga('create', 'UA-52700722-1', 'auto');
+  	  ga('send', 'pageview');
+
+  	</script>
+  </body>
+</html>

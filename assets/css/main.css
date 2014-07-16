@@ -143,6 +143,11 @@ i {
     background-size: cover;
 }
 
+#sucesso-inscricao #headerwrap {
+  padding-top: 100px;
+  min-height: 600px;
+}
+
 @media (max-width: 1199px) {
   #headerwrap {
     padding-top: 60px;
@@ -174,8 +179,8 @@ i {
 }
 
 .plan {
-  width: 100%;
-  margin: 20px auto;
+  width: 75%;
+  margin: 0px auto 20px auto;
   padding: 15px 25px;
   text-align: center;
   background: white;
@@ -219,17 +224,21 @@ i {
 }
 
 .plan-features {
-  width: 90%;
-  margin: 20px auto 15px;
-  padding: 0 0 0 15px;
+  width: 95%;
+  margin: 15px auto 15px;
+  padding: 0px;
   text-align: left;
 }
 
 .plan-feature {
   line-height: 20px;
-  font-size: 24px;
   font-weight: 500;
   color: #333;
+  list-style: none;
+  background-image: url('../img/bullet.gif');
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding: 0 0 0 15px;
 }
 .plan-feature + .plan-feature {
   margin-top: 5px;
