@@ -137,6 +137,13 @@ a:after {
 	letter-spacing: 1px;
 }
 
+@media (max-width: 991px) {
+  .navbar-default .navbar-right {
+    line-height: 1.5em;
+    float: left !important;
+  }
+}
+
 /* WRAP SECTIONS */
 
 textarea {
