@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <meta name="description" content="eBook Chef Cleanr é uma ferramenta gratuita para limpeza do código fonte XHTML de eBooks gerados através de conversores automáticos.">
+    <meta name="keywords" content="ebook, ebooks, epub, ferramenta, ebook chef, criação de ebooks, criação de epub, criar ebook, criar epub, código fonte, cleanr, limpar código,">
+    <meta name="robots" content="index, follow, noimageindex">
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon32.png" />
+
+    <title>eBook Chef - Cleanr</title>
+
+    <meta property="og:url" content="http://ebookchef.com.br/" /> 
+    <meta property="og:title" content="eBook Chef Cleanr" />
+    <meta property="og:description" content="Ferramenta gratuita para limpeza do código fonte XHTML de eBooks/ePub gerados através de conversores automáticos." /> 
+    <meta property="og:image" content="http://ebookchef.com.br/assets/img/iconebookchef.png" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet' type='text/css'>
+
+    <link href="../assets/css/introjs.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+
+    <script src="assets/codemirror/lib/codemirror.js"></script>
+	<link rel="stylesheet" href="assets/codemirror/lib/codemirror.css">
+	<script src="assets/codemirror/mode/javascript/javascript.js"></script>
+	<script src="assets/codemirror/mode/css/css.js"></script>
+	<script src="assets/codemirror/mode/xml/xml.js"></script>
+	<script src="assets/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+	<script src="../assets/js/intro.js"></script>
+
+    <script src="assets/js/eccleanr.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+          	<a href="/"><img src="../assets/img/logo.png" height="50" alt="eBook Chef"/></a>
+          	<a href="/cleanr/"><i class="fa fa-terminal"></i> Cleanr</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hello">
+	    <div class="container">
+	    	<h1>Limpe o código XHTML do seu eBook!</h1>
+	    	<h2>
+	    		Livre-se dos códigos indesejados deixados pelos conversores automáticos no seu eBook.<br/>
+	    		<button id="showMeBtn" class="btn btn-lg btn-primary">Mostre-me como!</button>
+	    	</h2>
+    		<form role="form">
+    			<div class="row">
+		    		<div class="col-lg-6">
+		    			<div class="form-group" data-intro="Cole o código que você quer limpar neste campo." data-step="1" data-position="right">
+		    				<label for="exampleInputEmail1">Código Original</label>
+			    			<textarea id="content"></textarea>
+			    		</div>
+		    		</div>
+		    		<div class="col-lg-6">
+		    			<div class="form-group" data-intro="Seu código fonte limpo estará disponível neste campo ao final do processo, basta copiar e colar no seu editor de eBooks." data-position="left">
+		    				<label for="exampleInputEmail1">Código Limpo</label>
+			    			<textarea id="result" readonly="readonly"></textarea>
+			    		</div>
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-lg-12" data-intro="Clique neste botão para executar a limpeza do seu código." data-step="2" data-position="top">
+		    			<button type="button" id="execClean" class="btn btn-lg btn-success btn-block">Limpar Código &raquo;</button>
+		    		</div>
+		    	</div>
+	    	</form>
+	    </div> <!-- /container -->
+	</div> <!-- /hello -->
+
+
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<p>Uma ferramenta <img src="../assets/img/logo.png" height="30" alt="eBook Chef"/></p>
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
+</html>
