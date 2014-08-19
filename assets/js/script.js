@@ -33,6 +33,10 @@ $('document').ready(function() {
 		return false;
 	});
 
+	$(".navbar-nav li a").on('click', function(event) {
+		$(".navbar-collapse").collapse('hide');
+	});
+
 	$('#btnEcerrado').on('click', function(e) {
 		ga('send', 'event', 'click', 'btn', 'encerrado');
 	});
