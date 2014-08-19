@@ -32,4 +32,8 @@ $('document').ready(function() {
 		});
 		return false;
 	});
+
+	$('#btnEcerrado').on('click', function(e) {
+		ga('send', 'event', 'click', 'btn', 'encerrado');
+	});
 });
